@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------- 初期設定 ----------*/
+body{
+	padding:0;
+	margin:0;
+	background-color: #FFFFFF;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+/*----------色初期設定----------*/
+.maincolor{
+	color:#00F;
+}
+.subcolor{
+	color:#F00;
+}
+.etccolor{
+	color:#FF0;
+}
+.txtmaincolor{
+	color:#666;
+}
+.txtsubcolor{
+	color:#fff;
+}
+.mainbgcolor{
+	background-color:#00F;
+}
+.subbgcolor{
+	background-color:#F00;
+}
+.etcbgcolor{
+	background-color:#FF0;
+}
+
+/*----------文字初期設定----------*/
+a:link {
+	color: #00F;
+}
+
+a:visited {
+	color: #FF0;
+}
+
+a:hover {
+	color: #F00;
+}
+
+.txtfooter{
+	text-align: center;
+	font-size: 12px;
+	padding :140px 0px 140px 0px ;
+}
+/*----------.contents内部----------*/
+.txtindex{
+	padding :20px 0px 0px 52px ;
+
+}
+.eyecatch{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+	margin-bottom: 125px;
+	box-shadow: 7px 7px 5px 0px #bbb;
+}
+
+h2 {
+	margin:10px 0 20px 60px;
+	position: relative;
+	background: #00F;
+	padding: 6px 5px 4px 45px;
+	font-size: 20px;
+	color: #fff;
+	border-radius: 25px;
+}
+
+h2:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f152";
+	font-weight: 900;
+	display: inline-block;
+	line-height: 40px;
+	position: absolute;
+	padding: 0;
+	color: #fff;
+	background: #00F;
+	font-weight: normal;
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	left: -12px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border: solid 3px #FFF; 
+	border-radius: 50%;
+}
+h3{
+	color:#FFF;
+	text-shadow: 3px 3px 2px #333;
+	margin:10px 0 25px 50px;
+	padding:8px 0px 7px 20px ;
+	background-color: #00F;
+	border-radius: 25px;
+	box-shadow: 10px 15px 5px -5px rgba(0,0,0,0.4),inset 8px 8px 15px 0px rgba(255,255,255,0.4),inset -8px -8px 15px 0px rgba(0,0,0,0.4);
+}
+
+.boxhonbun{
+	letter-spacing: 1px;
+	line-height: 180%;
+	padding :30px 25px 30px 25px ;
+	margin:0px 2px 20px 52px;
+	text-align: left;
+	background: #dFF;
+	border-top: solid 5px #00F;
+	border-bottom: solid 5px #00F;
+}
+.boxhonbundrop{
+	letter-spacing: 1px;
+	line-height: 180%;
+	padding :30px 25px 30px 25px ;
+	margin:0px 2px 20px 52px;
+	text-align: left;
+	background: #dFF;
+	border-top: solid 5px #00F;
+	border-bottom: solid 5px #00F;
+	box-shadow: 7px 7px 5px 0px #bbb;
+}
+hr {
+	margin:75px 2px 70px 52px;
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #bbb inset;
+}
+
+
+
+
+/*----------ボックスレイアウト----------*/
+/*----------UserInterfaceのレイアウト----------*/	
+.topbar{
+	width:100%;
+	height: 30px;
+	margin: auto;
+}
+
+.top{
+	width:100%;
+	height: 550px;
+	margin: auto;
+	background-image:url(img/titleback.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+.menuglobalbox{
+	width:100%;
+	padding: 0;
+	background-image:url(img/titleback.png);
+	background-repeat: no-repeat;
+	background-position:bottom;
+}
+.globalbox{
+	width:100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contents{
+	max-width:600px;
+	background-color:#ffffff;
+	display: table-cell;
+	text-align:left;
+	vertical-align:top;
+}
+
+.footer{
+	width:100%;
+	border-radius: 0px;
+	margin: auto;
+}
+
+
+
+/*----------.TOP内部のレイアウト----------*/	
+.topinner{
+	width: 100%;
+	display: table;
+}
+.rogo{
+	display:table-cell;
+	vertical-align:middle;	
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+
+}
+.rogo img{
+	display: inline-block;
+	padding: 0px;
+}
+
+/*----------.menuglobalbox内部のレイアウト----------*/	
+.menubox{
+	max-width:800px;
+	margin: auto;
+	text-align: center;
+	padding: 0;
+	border-radius: 0px;
+}
+.mainmenu{
+	width:100%;
+	height:51px;
+	margin: auto;
+	padding: 0;
+	text-align: left;
+}
+
+/*----------.globalbox内部のレイアウト----------*/	
+.localbox{
+	max-width:800px;
+	padding: 0;
+	display: inline-block;
+	margin:0;
+}
+.submenu{
+	max-width:200px;
+	display: table-cell;
+	border-radius: 0px;
+	background-image:url(img/subback.png);
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+
+
+
+
+/*----------mainmenuの設定----------*/
+/*----------ラジオボタン非表示設定----------*/
+.mainmenu input[type=radio] {
+	display: none; 
+}
+/*----------最初に選択されているボタン----------*/
+.mainmenu input[type="radio"]:checked + label {
+	background-image:url("img/02.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+/*background: #31A9EE; */
+	color: #000000; 
+}
+/*----------選択されていないボタン----------*/
+.mainmenu input[type="radio"] + label {
+	background-image:url("img/01.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	color: #ffffff; 
+}
+/*----------ラジオボタンのmenu本体設定----------*/
+.mainmenu .mainbutton {
+	display: block;
+	float: left;
+	margin: 0px;
+	width: 100px; 
+	height: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	border-radius: 5px;
+	position:relative; 
+	top:0px;
+}
+/*----------マウスオーバー----------*/
+.mainmenu .mainbutton:hover {
+	background-image:url("img/03.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+
+
+/*----------submenuの設定----------*/
+/*----------ラジオボタン非表示設定----------*/
+.submenu input[type=radio] {
+	display: none; 
+}
+/*----------最初に選択されているボタン----------*/
+.submenu input[type="radio"]:checked + label {
+	background-image:url("img/sub02.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+/*background: #31A9EE; */
+	color: #000000; 
+}
+/*----------選択されていないボタン----------*/
+.submenu input[type="radio"] + label {
+	background-image:url("img/sub01.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	color: #ffffff; 
+}
+/*----------ラジオボタンのmenu本体設定----------*/
+.submenu .subbutton {
+	display: block;
+	float: left;
+	width: 100%; 
+	height: 30px;
+	border-radius: 5px;
+	position:relative; 
+	top:0px;
+}
+
+.submenu .txtsubbutton{
+	padding-top :5px;
+	text-indent:20px;
+	text-align: left;
+}
+
+/*----------マウスオーバー----------*/
+.submenu .subbutton:hover {
+	background-image:url("img/sub03.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+
+/*----------Font Awesome-----------*/
+.angle:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f101";
+	font-weight: 900;
+}
+.square:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f205";
+	font-weight: 900;
+	padding-right :2px;
+}
+.arrow:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f0a9";
+	font-weight: 900;
+}
+.dotcircle:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f192";
+	font-weight: 900;
+}
+h3:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f044";
+	font-weight: 900;
+	padding-right : 3px;
+}
+h4:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f192";
+	font-weight: 900;
+	padding-right : 3px;
+}
